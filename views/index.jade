@@ -1,0 +1,51 @@
+extends layout
+
+block content
+ main
+      .bayer-bg
+        .mask.d-flex.align-items-center.h-100
+          .container
+            .row.justify-content-center
+              .col-xl-5.col-md-8
+                h2.bayer-text-rd.text-center.mb-4 Altere sua senha!
+                |               
+                p.bayer-text-sv.fs-6.lh-1 Se voc&ecirc; tem certeza que deseja alterar a senha, preencha os seguintes campos:
+            |           
+            .row.justify-content-center
+              .col-xl-5.col-md-8
+                form.rounded.p-5.pt-3#redefinepass
+                  // Password input
+                  .form-outline.mb-4
+                    input#newpassword.form-control.pt-2.text-white(type='password', onkeyup='verifyPass();')
+                    |                   
+                    a#btn-newPassword.btn.btn-toggle(href='#', role='button')
+                      i#eyeIcon.fas.fa-eye.trailing.text-white.text-white
+                    |                   
+                    label.form-label.bayer-text-sv(for='newpassword') Senha
+                  // Confirm Password input
+                  .form-outline.mb-4
+                    input#confirmpassword.form-control.pt-2.text-white(type='password', onkeyup='verifyPass()', ;='')
+                    |                   
+                    a#btn-confirmPassword.btn.btn-toggle(href='#', role='button')
+                      i#eyeIcon-confirm.fas.fa-eye.trailing.text-white
+                    |                   
+                    label.form-label.bayer-text-sv(for='confirmpassword') Confirme senha
+                  |                 
+                  .bayer-feedback As senhas n&atilde;o coincidem!
+                  |                 
+                  .bayer-feedback-pattern.lh-1
+                    i.fas.fa-exclamation-circle.trailing.float-end
+                    |                   
+                    .bayerfeedback-wrapper
+                      p.mb-0 A senha deve conter no m&iacute;nimo 8 caracteres:
+                      |  
+                      |                     
+                      p.mb-0
+                        | Deve incluir pelo menos uma letra mai&uacute;scula,
+                        | pelo menos uma letra min&uacute;scula, pelo menos um n&uacute;mero e um caractere especial.
+                  // Submit button
+                  button.btn.btn-primary.btn-bayer.btn-block.shadow-1-strong(type='submit') AlTERAR SUA SENHA
+                    //- span.spinner-border.spinner-border-sm(role='status', aria-hidden='true')
+                    //- | Loading...
+   
+  

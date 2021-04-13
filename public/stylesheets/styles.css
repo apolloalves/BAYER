@@ -1,0 +1,74 @@
+.bayer-bg {
+    background: rgb(0, 43, 127);
+    background: linear-gradient(90deg, rgba(0, 43, 127, 1) 0%, rgba(34, 37, 127, 1) 35%, rgba(72, 32, 128, 1) 100%);
+    height    : 100vh;
+}
+
+.bayer-text-sv {
+    color: #EBE7CE !important;
+}
+
+.bayer-text-rd {
+    color: #E13E4C;
+}
+
+.btn-bayer {
+    background: #E13E4C;
+}
+
+.btn-toggle {
+    position  : absolute;
+    top       : 0;
+    right     : 0;
+    font-size : 1rem;
+    box-shadow: none;
+    padding   : 18px;
+    width     : 2.8rem;
+}
+
+.bayer-feedback {
+    position : relative;
+    bottom   : 15px;
+    color    : #E13E4C;
+    display  : none;
+    font-size: 13px;
+}
+
+.bayer-feedback-pattern {
+    position     : relative;
+    bottom       : 13px;
+    display      : flex;
+    width        : 100%;
+    border       : 1px solid #E13E4C;
+    border-radius: 5px;
+    padding      : 9px 12px;
+    font-size    : 13px;
+    color        : #E13E4C;
+    font-weight  : 400;
+    display      : none;
+}
+
+.bayer-feedback-wrapper {
+    padding: 8px 27px 8px 14px;
+}
+/* .bayer-feedback-pattern > i {
+    position: relative;
+    top: .375rem;
+} */
+
+.btn-toggle:hover,
+.btn-toggle:focus {
+    box-shadow: none;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.navbar .nav-link {
+    color: #fff !important;
+}
