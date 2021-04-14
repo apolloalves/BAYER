@@ -45,3 +45,6 @@ const RegexPassTest = () => {
 passwordInput.addEventListener('change', RegexPassTest, false)
 confirmInput.addEventListener('change', RegexPassTest, false)
 
+
+
+
