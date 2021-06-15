@@ -42,9 +42,54 @@ const RegexPassTest = () => {
 
 }
 
+
 passwordInput.addEventListener('change', RegexPassTest, false)
 confirmInput.addEventListener('change', RegexPassTest, false)
 
 
+
+const Pessoa = (name) => {
+let idade; 
+
+return{
+    setName: (newName) =>{
+        name = newName
+    }, 
+    getName: () => {
+        return name
+    }, 
+
+    setIdade: (newIdade) => {
+        idade = newIdade
+
+    },
+    getIdade: () => {
+        return idade
+    }
+
+    }
+}
+var aluno = Pessoa('Eduardo');
+
+
+document.write("<br>Nome do aluno: " + aluno.getName());         // retorna Eduardo
+           aluno.setName('João');   // alterado o nome para João
+           aluno.setIdade(20);      
+           document.write("<br>Idade: " + aluno.getIdade());        // retorna 20
+           document.write("<br>Nome Atualizado: " + aluno.getName());       
+
+
+
+const loadFile = () => {
+    let ajax = new XMLHttpRequest()
+
+    ajax.onreadystatechange = () => {
+        if( this.readyState === 4 && this.readyStatus === 200) {
+            console.log( this.responseText )
+        }
+    }
+}
+
+loadFile()
 
 
